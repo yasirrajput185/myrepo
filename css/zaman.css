@@ -122,3 +122,15 @@ footer {
   margin-top: 30px;
   color: #888;
 }
+.nav {
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2c7a7b;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
