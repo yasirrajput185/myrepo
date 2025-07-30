@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasir Rajput - CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e9eef3;
+      color: #333;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      overflow-x: hidden;
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-30px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    .header:hover {
+      transform: scale(1.01);
+    }
+
+    .header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 3px solid #2c7a7b;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .header-text h1 {
+      font-size: 28px;
+      color: #2c3e50;
+      animation: slideIn 1.2s ease-out;
+    }
+
+    .header-text h3 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #2c7a7b;
+      margin-top: 5px;
+      animation: slideIn 1.3s ease-out;
+    }
+
+    .section {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+
+    .contact p, ul li {
+      margin: 6px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "▹ ";
+      color: #2c7a7b;
+      font-weight: bold;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header fade-in">
+    <img src="img/yasir.png" alt="Yasir Rajput">
+    <div class="header-text">
+      <h1>Yasir Rajput</h1>
+      <h3>Full-Stack Web Developer</h3>
+    </div>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 0.3s;">
+    <h2>Contact</h2>
+    <p>Email: yasirrajput185@gmail.com</p>
+    <p>Phone: +92 307 3023185</p>
+    <p>Location: Hyderabad, Sindh, Pakistan</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yasirrajput185">yasirrajput185</a></p>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 0.5s;">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor's in Software Engineering</strong> – University of Sindh, Jamshoro (2019–2023), Grade A</li>
+    </ul>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 0.7s;">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Web Development (HIDAYA - HIST), 2023</li>
+      <li>App Development (NAVTTC), 2022</li>
+    </ul>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 0.9s;">
+    <h2>Skills</h2>
+    <ul>
+      <li>Laravel, Vue.js, Oracle/MySQL</li>
+      <li>API Integration, JWT, SSL</li>
+      <li>UAE Insurance Platforms</li>
+      <li>Digital Signature Authentication</li>
+    </ul>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 1.1s;">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Full-Stack Web Developer – ITLOGY Web Solutions</strong><br/>
+        Dec 2023 – Present<br/>
+        ▹ Built UAE insurance tech solutions (B2C portals, CRM)<br/>
+        ▹ Integrated APIs (AWNIC, Orient, DNI, Union)<br/>
+        ▹ UAE PASS (Presentation, Visualization) Integration<br/>
+        ▹ Vue.js dashboards and forms<br/>
+        ▹ Oracle/MySQL performance optimization
+      </li><br/>
+      <li>
+        <strong>Web Dev Intern – Hidaya Institute</strong><br/>
+        Feb 2023 – May 2023<br/>
+        ▹ PHP/MySQL student modules<br/>
+        ▹ Bootstrap/JS frontend development<br/>
+        ▹ Testing and deployment
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
